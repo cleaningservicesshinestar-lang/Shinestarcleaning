@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback';
+  --color-primary: #1C7CD6;
+  --color-accent: #004AAD;
+  --color-background: #FFFFFF;
+  --color-foreground: #333333;
+  --color-muted: #E6E6E6;
+  --color-border: #E6E6E6;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
