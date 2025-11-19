@@ -1,15 +1,28 @@
-interface PageHeaderProps {
-  title: string;
-  subtitle?: string;
-}
-
-export function PageHeader({ title, subtitle }: PageHeaderProps) {
+export function PageHeader({ title, subtitle, imageSrc }: PageHeaderProps) {
   return (
-    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#1C7CD6] to-[#004AAD] text-white text-center">
-      <div className="max-w-4xl mx-auto space-y-4">
-        <h1 className="text-5xl md:text-6xl font-bold text-balance">{title}</h1>
+    <section
+      className="relative pt-40 pb-24 px-4 sm:px-6 lg:px-8 text-center bg-cover bg-center bg-no-repeat"
+      style={
+        imageSrc
+          ? { backgroundImage: `url(${imageSrc})` }
+          : { background: "linear-gradient(to bottom right, #1C7CD6, #004AAD)" }
+      }
+    >
+      {/* Overlay */}
+      {imageSrc && (
+        <div className="absolute inset-0 bg-black/40"></div>
+      )}
+
+      {/* Text on top */}
+      <div className="relative max-w-4xl mx-auto space-y-6 text-white">
+        <h1 className="text-6xl md:text-7xl font-bold text-balance">
+          {title}
+        </h1>
+
         {subtitle && (
-          <p className="text-xl text-gray-200 text-pretty">{subtitle}</p>
+          <p className="text-2xl md:text-3xl text-pretty">
+            {subtitle}
+          </p>
         )}
       </div>
     </section>

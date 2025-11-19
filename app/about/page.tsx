@@ -10,9 +10,11 @@ export default function About() {
       <Navbar />
       
       <PageHeader
-        title="About Shine Star Cleaning"
+        title="About Shine Star Cleaning Services"
         subtitle="Professional cleaning with integrity, expertise, and a commitment to excellence"
       />
+
+
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -109,14 +111,14 @@ export default function About() {
                   />
                 </div>
                 <h3 className="text-xl font-bold text-[#1A1A1A]">{member.name}</h3>
-                <p className="text-[#F4A942] font-semibold">{member.role}</p>
+                <p className="text-[#1C7CD6] font-semibold">{member.role}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#2D5A4D] text-white rounded-2xl">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#1C7CD6] text-white rounded-2xl">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -127,7 +129,7 @@ export default function About() {
               
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-[#F4A942] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-[#01d61d] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-[#2D5A4D] font-bold">✓</span>
                   </div>
                   <div>
@@ -136,7 +138,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-[#F4A942] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-[#01d61d] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-[#2D5A4D] font-bold">✓</span>
                   </div>
                   <div>
@@ -145,7 +147,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-[#F4A942] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-6 h-6 bg-[#01d61d] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-[#2D5A4D] font-bold">✓</span>
                   </div>
                   <div>

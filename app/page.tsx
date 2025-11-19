@@ -103,9 +103,9 @@ export default function Home() {
               imageSrc="/clean-modern-living-room-professional-cleaning.jpg"
             />
             <ServiceCardImage
-              title="Carpet Cleaning"
-              description="Professional carpet and upholstery cleaning using eco-friendly methods and state-of-the-art equipment."
-              imageSrc="/clean-bright-home-interior-modern-living-room.jpg"
+              title="Pressure Cleaning"
+              description="Powerful pressure cleaning for all outdoor surfaces."
+              imageSrc="/pressure-cleaning.png"
             />
             <ServiceCardImage
               title="Window Cleaning"

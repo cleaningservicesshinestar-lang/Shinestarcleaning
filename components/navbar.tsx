@@ -13,6 +13,7 @@ export function Navbar() {
     { name: "Commercial Cleaning", href: "/services/commercial" },
     { name: "Industrial Cleaning", href: "/services/industrial" },
     { name: "Specialised Cleaning", href: "/services/specialised" },
+    { name: "Pressure Cleaning", href: "/services/pressure" },
   ];
 
   return (
