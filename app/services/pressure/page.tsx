@@ -1,14 +1,11 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { CheckCircle, Zap, Droplets, Shield, Factory } from 'lucide-react';
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
-
-export const metadata = {
-  title: "Pressure Washing Services | Shine Star",
-  description: "Professional high-pressure exterior cleaning for homes, driveways, buildings, and commercial surfaces.",
-};
 
 export default function PressurePage() {
   return (
@@ -153,18 +150,21 @@ export default function PressurePage() {
               title="Homeowner"
               content="My driveway looks brand new! Shine Star did an amazing job removing years of stains."
               rating={5}
+              index={0}
             />
             <TestimonialCard
               name="Elena Moore"
               title="Business Owner"
               content="Excellent service! Our storefront instantly looks brighter and more welcoming."
               rating={5}
+              index={1}
             />
             <TestimonialCard
               name="Dylan Harris"
               title="Property Manager"
               content="Reliable, professional, and high-quality results. Highly recommended for commercial cleaning."
               rating={5}
+              index={2}
             />
           </div>
         </div>

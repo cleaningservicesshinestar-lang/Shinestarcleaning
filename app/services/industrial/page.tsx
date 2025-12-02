@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -6,11 +8,6 @@ import { StepCard } from "@/components/step-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
 import { CheckCircle, Shield, Leaf, Zap, Factory, HardHat, AlertCircle, Wrench } from 'lucide-react';
-
-export const metadata = {
-  title: "Industrial Cleaning Services | Shine Star",
-  description: "Heavy-duty industrial cleaning for warehouses, factories, and manufacturing facilities. Specialized equipment and trained personnel.",
-};
 
 export default function IndustrialPage() {
   return (
@@ -165,18 +162,21 @@ export default function IndustrialPage() {
               title="Facility Manager, Manufacturing"
               content="Shine Star transformed our production facility. Their team understands industrial operations and delivers exceptional results on schedule."
               rating={5}
+              index={0}
             />
             <TestimonialCard
               name="Patricia Johnson"
               title="Operations Director, Logistics"
               content="Professional and reliable. They've handled our warehouse cleaning for two years with zero issues. Highly recommended."
               rating={5}
+              index={1}
             />
             <TestimonialCard
               name="Kevin Davis"
               title="Safety Officer, Industrial Plant"
               content="Excellent compliance record. Their team knows OSHA standards inside and out. Our facility has never been cleaner or safer."
               rating={5}
+              index={2}
             />
           </div>
         </div>

@@ -1,7 +1,12 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
+  "/gallery/page": "app/gallery/page.js",
   "/page": "app/page.js",
-  "/service-areas/page": "app/service-areas/page.js"
+  "/service-areas/page": "app/service-areas/page.js",
+  "/services/commercial/page": "app/services/commercial/page.js",
+  "/services/industrial/page": "app/services/industrial/page.js",
+  "/services/pressure/page": "app/services/pressure/page.js",
+  "/services/residential/page": "app/services/residential/page.js",
+  "/services/specialised/page": "app/services/specialised/page.js"
 }

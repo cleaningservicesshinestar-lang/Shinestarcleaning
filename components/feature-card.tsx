@@ -27,6 +27,7 @@ export function FeatureCard({ icon: Icon, title, description, index = 0 }: Featu
       >
         <Icon className="text-white" size={24} />
       </motion.div>
+
       <h3 className="text-base sm:text-lg font-bold text-[#1A1A1A] mb-2">{title}</h3>
       <p className="text-[#9CA3AF] text-sm leading-relaxed max-w-xs">{description}</p>
     </motion.div>

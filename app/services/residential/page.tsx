@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -6,11 +8,6 @@ import { StepCard } from "@/components/step-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
 import { CheckCircle, Shield, Leaf, Clock, Home, Sparkles, Wind, Droplets, Trash2, Zap } from 'lucide-react';
-
-export const metadata = {
-  title: "Residential Cleaning Services | Shine Star",
-  description: "Professional residential cleaning services for homes. Deep cleaning, regular maintenance, and specialty cleaning for a spotless home.",
-};
 
 export default function ResidentialPage() {
   return (
@@ -80,10 +77,10 @@ export default function ResidentialPage() {
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
-            <StepCard step={1} title="Assessment" description="We evaluate your home and discuss your cleaning preferences and priorities." />
-            <StepCard step={2} title="Preparation" description="Our team prepares equipment and gathers supplies for thorough, efficient cleaning." />
-            <StepCard step={3} title="Cleaning" description="We execute our detailed cleaning plan with attention to every detail and surface." />
-            <StepCard step={4} title="Inspection" description="Quality check ensures everything meets our high standards before we leave." />
+            <StepCard step={1} title="Assessment" description="We evaluate your home and discuss your cleaning preferences and priorities." index={0} />
+            <StepCard step={2} title="Preparation" description="Our team prepares equipment and gathers supplies for thorough, efficient cleaning." index={1} />
+            <StepCard step={3} title="Cleaning" description="We execute our detailed cleaning plan with attention to every detail and surface." index={2} />
+            <StepCard step={4} title="Inspection" description="Quality check ensures everything meets our high standards before we leave." index={3} />
           </div>
         </div>
       </section>
@@ -101,21 +98,25 @@ export default function ResidentialPage() {
               icon={Shield}
               title="Trained & Insured"
               description="All staff professionally trained and fully insured for complete peace of mind."
+              index={0}
             />
             <FeatureCard
               icon={Leaf}
               title="Eco-Friendly"
               description="We use sustainable, non-toxic products safe for your family and pets."
+              index={1}
             />
             <FeatureCard
               icon={Clock}
               title="Reliable & Punctual"
               description="We arrive on schedule and complete your cleaning efficiently."
+              index={2}
             />
             <FeatureCard
               icon={CheckCircle}
               title="100% Satisfaction"
               description="If you're not happy, we'll return at no extra charge until you are."
+              index={3}
             />
           </div>
         </div>
@@ -135,18 +136,21 @@ export default function ResidentialPage() {
               title="Homeowner, Downtown"
               content="Shine Star has been cleaning our home for over a year now. The team is professional, punctual, and thorough. Our house has never looked better!"
               rating={5}
+              index={0}
             />
             <TestimonialCard
               name="James Rodriguez"
               title="Homeowner, Suburbs"
               content="Highly impressed with the attention to detail. They clean areas we didn't even think about. Definitely recommend to all my friends."
               rating={5}
+              index={1}
             />
             <TestimonialCard
               name="Emma Davis"
               title="Homeowner, Riverside"
               content="Best decision we made. Having professional cleaners gives us more time with family. Quality work at fair prices!"
               rating={5}
+              index={2}
             />
           </div>
         </div>

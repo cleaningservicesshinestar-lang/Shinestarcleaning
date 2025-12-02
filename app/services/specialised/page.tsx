@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -5,11 +7,6 @@ import { FeatureCard } from "@/components/feature-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
 import { CheckCircle, Sparkles, Droplets, Wind, Zap, Shield, Leaf } from 'lucide-react';
-
-export const metadata = {
-  title: "Specialised Cleaning Services | Shine Star",
-  description: "Specialized cleaning services including carpet, window, floor, pressure washing, disinfection, and sanitization. Expert solutions for unique cleaning needs.",
-};
 
 export default function SpecialisedPage() {
   return (
@@ -113,21 +110,25 @@ export default function SpecialisedPage() {
               icon={Sparkles}
               title="Advanced Equipment"
               description="State-of-the-art cleaning technology for superior results."
+              index={0}
             />
             <FeatureCard
               icon={Shield}
               title="Expert Technicians"
               description="Certified professionals with specialized training and expertise."
+              index={1}
             />
             <FeatureCard
               icon={Leaf}
               title="Eco-Friendly"
               description="Safe, non-toxic products protecting your family and environment."
+              index={2}
             />
             <FeatureCard
               icon={CheckCircle}
               title="Guaranteed Results"
               description="We stand behind our work with satisfaction guarantees."
+              index={3}
             />
           </div>
         </div>
@@ -147,18 +148,21 @@ export default function SpecialisedPage() {
               title="Homeowner - Carpet Cleaning"
               content="My carpets look like new! They removed stains I thought were permanent. Professional service and great pricing."
               rating={5}
+              index={0}
             />
             <TestimonialCard
               name="Marcus Thompson"
               title="Business Owner - Window Cleaning"
               content="Crystal clear windows every time. They even cleaned the high windows on our storefront safely. Highly professional!"
               rating={5}
+              index={1}
             />
             <TestimonialCard
               name="Amanda Rodriguez"
               title="Property Manager - Floor Care"
               content="Our hardwood floors are stunning after their restoration work. They handled everything with such care and expertise."
               rating={5}
+              index={2}
             />
           </div>
         </div>

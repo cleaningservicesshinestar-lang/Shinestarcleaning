@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -6,11 +8,6 @@ import { StepCard } from "@/components/step-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
 import { CheckCircle, Shield, Leaf, Clock, Building2, Users, BarChart3, Zap } from 'lucide-react';
-
-export const metadata = {
-  title: "Commercial Cleaning Services | Shine Star",
-  description: "Professional commercial cleaning for offices, retail, and businesses. Flexible scheduling, trained staff, and customized cleaning solutions.",
-};
 
 export default function CommercialPage() {
   return (
@@ -122,21 +119,26 @@ export default function CommercialPage() {
               icon={Shield}
               title="Bonded & Insured"
               description="Complete protection with comprehensive commercial insurance coverage."
+              index={0}
             />
+
             <FeatureCard
               icon={Leaf}
               title="Eco-Friendly"
               description="Green cleaning solutions safe for employees and the environment."
+              index={1}
             />
             <FeatureCard
               icon={BarChart3}
               title="Efficiency"
               description="Trained teams maximize cleaning while minimizing disruption to operations."
+              index={2}
             />
             <FeatureCard
               icon={CheckCircle}
               title="Quality Guarantee"
               description="Satisfaction guarantee with regular quality inspections and reporting."
+              index={3}
             />
           </div>
         </div>
@@ -156,18 +158,21 @@ export default function CommercialPage() {
               title="Office Manager, Tech Company"
               content="We switched to Shine Star for our office cleaning and haven't looked back. They go above and beyond and always pay attention to detail."
               rating={5}
+              index={0}
             />
             <TestimonialCard
               name="Lisa Anderson"
               title="Retail Store Manager"
               content="Reliable, professional, and responsive. Our storefront has never looked better. They fit perfectly into our busy schedule."
               rating={5}
+              index={1}
             />
             <TestimonialCard
               name="David Thompson"
               title="Medical Office Administrator"
               content="Exceptional attention to hygiene standards and professionalism. Our patients immediately notice the difference."
               rating={5}
+              index={2}
             />
           </div>
         </div>
