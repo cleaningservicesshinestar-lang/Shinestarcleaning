@@ -1,9 +1,5 @@
 {
-  "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/gallery/page": "app/gallery/page.js",
   "/page": "app/page.js",
-  "/service-areas/page": "app/service-areas/page.js",
   "/services/commercial/page": "app/services/commercial/page.js",
   "/services/industrial/page": "app/services/industrial/page.js",
   "/services/pressure/page": "app/services/pressure/page.js",

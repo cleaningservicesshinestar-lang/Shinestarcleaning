@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -29,31 +31,37 @@ export default function Services() {
               icon={Sparkles}
               title="Residential Cleaning"
               description="Professional home cleaning services including living areas, bedrooms, kitchens, and bathrooms. We handle regular maintenance or deep cleaning."
+              index={0}
             />
             <ServiceCard
               icon={Building2}
               title="Commercial Cleaning"
               description="Create a professional impression with our comprehensive office and retail cleaning services. Perfect for ongoing maintenance."
+              index={1}
             />
             <ServiceCard
               icon={Factory}
               title="Industrial Cleaning"
               description="Heavy-duty industrial cleaning for warehouses, manufacturing plants, and commercial facilities using specialized equipment."
+              index={2}
             />
             <ServiceCard
               icon={Zap}
               title="Deep Cleaning"
               description="Intensive cleaning services targeting every detail including baseboards, vents, upholstery, and hard-to-reach areas."
+              index={3}
             />
             <ServiceCard
               icon={Droplets}
               title="Carpet Cleaning"
               description="Professional carpet and upholstery cleaning with eco-friendly methods that remove deep stains and odors effectively."
+              index={4}
             />
             <ServiceCard
               icon={Wind}
               title="Window Cleaning"
               description="Crystal-clear windows for residential and commercial properties. We handle interior, exterior, and high-rise window cleaning."
+              index={5}
             />
           </div>
         </div>
